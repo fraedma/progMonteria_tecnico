@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Persona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Gestión Datos Estudiantes</h1>
+        <hr noshade="noshade" size="3" width="70%" color="blue">
+        <br>
+        <table border="3" style="background-color: lightpink;">
+            <th>Propiedad</th>
+            <th>Valor</th>
+            <tbody>
+                <tr>
+                    <td>Cédula</td>
+                    <td>
+                        <input type="text" name="cedula" id="cedula" placeholder="Ingrese su cédula" required autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apellidos</td>
+                    <td>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nota 1</td>
+                    <td>
+                        <input type="number" name="nota1" id="nota1" placeholder="Ingrese la nota 1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nota 2</td>
+                    <td>
+                        <input type="number" name="nota2" id="nota2" placeholder="Ingrese la nota 2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nota 3</td>
+                    <td>
+                        <input type="number" name="nota3" id="nota3" placeholder="Ingrese la nota 3" required>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="3" style="background-color: lightpink;">
+            <tr>
+                <td>
+                    <button id="guardar"   onclick="guardarDatos()">Guardar</button>
+                    <button id="actualizar" onclick="actualizarDatos()">Actualizar</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h3>Listado de Estudiantes</h3>
+        <table border="3" style="background-color: lightpink;">
+            <thead>
+                <tr>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Nota Final</th>
+                    <th>Aprobado/Reprobado</th>
+                    <th>Calificación Cualitativa</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listadoEstudiantes">
+                <!-- Aquí se agregarán las filas dinámicamente -->
+            </tbody>
+        </table>
+    </center>
+    <script src="ejObjeto.js"></script>
+</body>
+</html>
